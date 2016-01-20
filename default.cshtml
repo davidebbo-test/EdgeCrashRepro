@@ -1,0 +1,15 @@
+﻿@using System.Threading.Tasks;
+@using EdgeJs;
+
+@functions {
+    Func<object, Task<object>> func = Edge.Func(@"
+            return function (data, callback) {
+                callback(null, 'Node.js welcomes ' + data);
+            }
+        ");
+}
+
+@{
+}
+
+Node.js welcomes @func(".NET").Result
