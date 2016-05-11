@@ -1,5 +1,7 @@
 # Simple repro case for Edge.js crash
 
+This relates to https://github.com/tjanczuk/edge/issues/383
+
 To repro the crash:
 
 - clone this repo
